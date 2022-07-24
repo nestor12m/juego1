@@ -10,7 +10,10 @@
 }
 body{
     background-color:var(--colorbody);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 main{
     height: 90vh;
