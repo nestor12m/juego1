@@ -178,6 +178,7 @@ function crearMensajeFinal(resultadoFinal){
      let parrafo = document.createElement("p");
      parrafo.innerHTML =` ${resultadoFinal}   `
      parrafo.style.color = "white";
+     
     
      seccionMensajes.appendChild(parrafo);
      const btnFuego = document.getElementById("boton_fuego");

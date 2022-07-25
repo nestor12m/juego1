@@ -121,6 +121,10 @@ p{
     border-radius: 7px;
     font-size: 18px;
  }
+ .vidas_jugador{
+    font-size: 25px;
+    color: white;
+ }
  #boton_reinciar{
     width: 175px;
     margin:30px auto;
