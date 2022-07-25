@@ -94,16 +94,16 @@ function seleccionarMascotaEnemigo(){
 
 
 function ataqueFuego(){
- ataqueJugador = "fuego";// piedra
+ ataqueJugador = "Piedra";// piedra
  ataqueEnemigo();
 }
 function ataqueAgua(){
-    ataqueJugador = "agua"; //papel
+    ataqueJugador = "Papel"; //papel
     ataqueEnemigo();
 }
 
 function ataqueTierra(){
-    ataqueJugador = "tierra";//tijera
+    ataqueJugador = "Tijera";//tijera
     ataqueEnemigo();
 }
 
@@ -113,13 +113,13 @@ function ataqueEnemigo(){
     let ataqueFinalAleatorio = aleatoria(1,3);
 
     if(ataqueFinalAleatorio === 1){
-        ataqueAleatorioEnemigo ="fuego"
+        ataqueAleatorioEnemigo ="Piedra"
     }
     else  if(ataqueFinalAleatorio === 2){
-        ataqueAleatorioEnemigo ="agua"
+        ataqueAleatorioEnemigo ="Papel"
     }
     else {
-        ataqueAleatorioEnemigo ="tierra"
+        ataqueAleatorioEnemigo ="Tijera"
     }
 
    combate();
@@ -132,19 +132,19 @@ let spanVidasEnemigo =document.getElementById("vidas_enemigo");
     if ( ataqueAleatorioEnemigo === ataqueJugador){
         crearMensaje("EMPATE");
     }
-    else if (ataqueJugador === "fuego" && ataqueAleatorioEnemigo === "tierra"){
+    else if (ataqueJugador === "Piedra" && ataqueAleatorioEnemigo === "Tijera"){
         crearMensaje("GANASTE");
         vidasEnemigo--;
         spanVidasEnemigo.innerHTML =vidasEnemigo;
         
     }
-    else if (ataqueJugador === "agua" && ataqueAleatorioEnemigo === "fuego"){
+    else if (ataqueJugador === "Papel" && ataqueAleatorioEnemigo === "Piedra"){
         crearMensaje("GANASTE");
         vidasEnemigo--;
         spanVidasEnemigo.innerHTML =vidasEnemigo;
         
     }
-    else if (ataqueJugador === "tierra" && ataqueAleatorioEnemigo === "agua"){
+    else if (ataqueJugador === "Tijera" && ataqueAleatorioEnemigo === "Papel"){
        
         crearMensaje("GANASTE");
         vidasEnemigo--;
@@ -171,11 +171,13 @@ function  revisarVidas(){
 }
 
 function crearMensajeFinal(resultadoFinal){
-
+    
     let seccionMensajes = document.getElementById("mensajes");
+   
       
      let parrafo = document.createElement("p");
      parrafo.innerHTML =` ${resultadoFinal}   `
+     parrafo.style.color = "white";
     
      seccionMensajes.appendChild(parrafo);
      const btnFuego = document.getElementById("boton_fuego");

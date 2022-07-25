@@ -1,7 +1,7 @@
 
 :root{
-  --colorbody:#0aca91;
-  --colorbtns:rgb(47, 255, 57);
+  --colorbody:#4e51c9;
+  --colorbtns:#4e51c9;
 }
 *{
     margin:0 ;
@@ -14,55 +14,66 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 main{
     height: 90vh;
-    width: 330px;
+    width: 360px;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    border-radius: 8px;
+}
+h1{
+    margin-top: 40px;
+    color:white;
+    font-weight: 900;
 }
 .section_mascota{
     display: flex;
     flex-direction: column;
     
 }
+.contenedor{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.tarjetas{
+    width: 205px;
+    height: 125px;
+    display: flex;
 
-.item{
-    width: 300px;
-    
-    margin-top:20px;
-    
 }
-.item label{
-    width: 140px;
-    color:black;
-    font-size: 20px;
-    margin-left: 5px;
-    
+.tarjetas img{
+    width: 200px;
+    height: 120px;
 }
-.item label img{
-    width: 100px;
-    height: 70px;
+
+input:checked + label{
+    border:3px solid rgb(255, 30, 0);
 }
-.inputs{
+
+input{
     display: none;
-}
-.item label img:checked{
-    background-color: red;
 }
 
 #boton_mascota{
-    width: 120px;
+    width: 175px;
     margin:30px auto;
     text-align: center;
     padding: 8px 5px;
     border-radius: 8px;
+    border: 2px solid white;
     background-color: var(--colorbtns);
     font-size: 18px;
+    color:white;
 }
 h2{
     font-size: 27px;
@@ -85,6 +96,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* -----------------------------------------------------------------------------------------
@@ -100,16 +112,25 @@ p{
     justify-content: space-evenly;
    
  }
+ 
  .botones_ataque{
-    padding: 8px 13px;
+    width: 100px;
+    padding: 12px 1px;
     margin-left: 13px;
     margin-top: 10px;
+    border-radius: 7px;
+    font-size: 18px;
  }
  #boton_reinciar{
-    padding: 10px 18px;
+    width: 175px;
+    margin:30px auto;
+    text-align: center;
+    padding: 8px 5px;
     border-radius: 8px;
+    border: 2px solid white;
     background-color: var(--colorbtns);
     font-size: 18px;
+    color:white;
  }
 
  
@@ -135,13 +156,13 @@ p{
 }
 
 .item{
-    width: 200px;
+    width: 250px;
     margin-top:20px;
     
 }
 .item label img{
-    width: 100px;
-    height: 70px;
+    width: 200px;
+    height: 120px;
 }
  
 /* -----------------------------------------------------------------------------------------
