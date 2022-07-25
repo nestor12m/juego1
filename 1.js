@@ -129,6 +129,7 @@ function combate(){
 let spanVidasjugador = document.getElementById("vidas_jugador");
 let spanVidasEnemigo =document.getElementById("vidas_enemigo");
 
+
     if ( ataqueAleatorioEnemigo === ataqueJugador){
         crearMensaje("EMPATE");
     }
@@ -156,7 +157,8 @@ let spanVidasEnemigo =document.getElementById("vidas_enemigo");
         spanVidasjugador.innerHTML =vidasJugador;
        
     }
-
+    
+    
     revisarVidas()
 }
 
@@ -197,11 +199,13 @@ function crearMensajeFinal(resultadoFinal){
 function crearMensaje(resultado){
 
 let seccionMensajes = document.getElementById("mensajes");
-  
+
  let parrafo = document.createElement("p");
  parrafo.innerHTML =`Tu mascota ataco con ${ataqueJugador}, la mascota del enemigo ataco con ${ataqueAleatorioEnemigo}: ${resultado} `
+ 
 
  seccionMensajes.appendChild(parrafo);
+ 
 
 }
 

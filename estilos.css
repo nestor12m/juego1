@@ -78,12 +78,15 @@ input{
 h2{
     font-size: 27px;
     color: rgb(2, 7, 68);
-    margin-top: 20px
+    margin-top: 20px;
+    
+    
 }
 
 p{
     font-size: 19px;
     color:rgb(11, 11, 20);
+    
 }
 #parrafo_error{
     font-size: 27px;
@@ -121,8 +124,26 @@ p{
     border-radius: 7px;
     font-size: 18px;
  }
+
+
+ .cont_vidas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    gap:10px;
+     }
+ .vidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+    height: 120px;
+    width: 130px;
+ }
  .vidas_jugador{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
  }
  #boton_reinciar{
@@ -137,6 +158,9 @@ p{
     color:white;
  }
 
+ #mensajes{
+    margin-top: 90px
+ }
  
 /* -----------------------------------------------------------------------------------------
                              media queris
